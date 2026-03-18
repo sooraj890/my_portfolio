@@ -18,7 +18,7 @@ class certificate extends StatelessWidget {
       containerHeight = screenHeight * 0.35;
     } else if (screenWidth < 1000) {
       // Tablet
-      containerWidth = screenWidth * 0.92; // two items side by side
+      containerWidth = screenWidth * 2; // two items side by side
       containerHeight = screenHeight * 0.45;
     } else {
       // Desktop
@@ -27,28 +27,31 @@ class certificate extends StatelessWidget {
     }
     return ScrollSlideUp(
       child: SectionCard(
-        title: 'My Certificates',
-        child: Container(
-            height: containerHeight,
-            width: containerWidth,
-            child: Column(
-              children: [
-                SingleChildScrollView(
-                  scrollDirection: Axis.horizontal,
-                  child: Row(
-                    children: [
-                      listItem(
-                        context,
-                        'UX Design Certificate',
-                        'assets/images/cert.png',
-                        'UX Design Certificate',
-                      ),
-                    ],
+        title: 'Certificates',
+        child: Padding(
+          padding: const EdgeInsets.only(top: 20),
+          child: Container(
+              height: containerHeight,
+              width: containerWidth,
+              child: Column(
+                children: [
+                  SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: Row(
+                      children: [
+                        listItem(
+                          context,
+                          'UX Design Certificate',
+                          'assets/images/cert.png',
+                          'UX Design Certificate',
+                        ),
+                      ],
+                    ),
                   ),
-                ),
-                Expanded(child: Icon(Icons.compare_arrows_outlined)),
-              ],
-            )
+                  Expanded(child: Icon(Icons.compare_arrows_outlined)),
+                ],
+              )
+          ),
         ),
       ),
     );

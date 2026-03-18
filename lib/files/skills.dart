@@ -5,15 +5,16 @@ import '../slideUpTransition.dart';
 
 class skills extends StatelessWidget {
   Widget build(BuildContext context) {
+    double screenWidth = MediaQuery.of(context).size.width;
     return ScrollSlideUp(
       child: SectionCard(
-        title: 'Technical Skills',
+        title: 'My Skills',
         child: Column(
           children: [
             Text(
-              "•Languages & Frameworks: Dart (Flutter), kotlin \n•Mobile Development: Cross-platform apps, Responsive UI, Animations, State management \n•Backend & Storage: Firebase, SQLite, REST APIs \n•Tools: Android Studio, VS Code, Git/GitHub",
+              "🔹Languages & Frameworks : Dart (Flutter),   kotlin \n🔹Mobile  Development:   Cross-platform apps, Responsive   UI,  Animations State management \n🔹Backend &  Storage:   Firebase, SQLite,   REST APIs \n🔹Tools:  Android Studio,  VS Code, Git/GitHub",style: TextStyle(fontSize: screenWidth < 700 ? 12 : 13),
             ),
-            SizedBox(height: 10),
+            SizedBox(height: 40),
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
               child: Row(
@@ -26,8 +27,8 @@ class skills extends StatelessWidget {
                     ),
                     child: Image.asset(
                       "assets/images/flutter.jpg",
-                      height: 150,
-                      width: 100,
+                      height: 100,
+                      width: 80,
                     ),
                   ),
                   SizedBox(width: 10),
@@ -39,8 +40,8 @@ class skills extends StatelessWidget {
                     ),
                     child: Image.asset(
                       "assets/images/dart.webp",
-                      height: 150,
-                      width: 100,
+                      height: 100,
+                      width: 80,
                     ),
                   ),
                   SizedBox(width: 10),
@@ -52,8 +53,8 @@ class skills extends StatelessWidget {
                     ),
                     child: Image.asset(
                       "assets/images/firebase.png",
-                      height: 150,
-                      width: 100,
+                      height: 100,
+                      width: 80,
                     ),
                   ),
                   SizedBox(width: 10),
@@ -65,8 +66,8 @@ class skills extends StatelessWidget {
                     ),
                     child: Image.asset(
                       "assets/images/sqflite.png",
-                      height: 150,
-                      width: 100,
+                      height: 100,
+                      width: 80,
                     ),
                   ),
                 ],

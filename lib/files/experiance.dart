@@ -15,15 +15,15 @@ class experiances extends StatelessWidget {
     if (screenWidth < 600) {
       // Mobile
       containerWidth = screenWidth * 0.9;
-      containerHeight = screenHeight * 0.45;
+      containerHeight = screenHeight * 0.53;
     } else if (screenWidth < 1000) {
       // Tablet
       containerWidth = screenWidth * 0.50; // two items side by side
-      containerHeight = screenHeight * 0.65;
+      containerHeight = screenHeight * 0.68;
     } else {
       // Desktop
       containerWidth = screenWidth * 0.3; // smaller, many side by side
-      containerHeight = screenHeight * 0.48;
+      containerHeight = screenHeight * 0.70;
     }    return ScrollSlideUp(
       child: Container(
         width: containerWidth,

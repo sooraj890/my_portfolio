@@ -3,11 +3,11 @@ class footer extends StatelessWidget {
   Widget build(BuildContext context) {
     double screenWidth = MediaQuery.of(context).size.width;
     double fontSize = screenWidth * 0.05;
-    fontSize = fontSize.clamp(16, 28); // min 16, max 28
+    fontSize = fontSize.clamp(12, 20); // min 16, max 28
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(vertical: 16),
-      color: Colors.blueGrey[900], // or any color
+      color: Colors.black12,// or any color
       child: Column(
         children: [
           Row(
@@ -16,11 +16,13 @@ class footer extends StatelessWidget {
                 child: SizedBox(
                   child: Column(
                     children: [
-                      Text("Services", style: TextStyle(fontSize: fontSize,fontWeight: FontWeight.bold),),
-                      Text("Flutter | Dart"),
-                      Text("Figma"),
-                      Text("Firebase"),
-                      Text("SQFLite"),
+                      SizedBox(height: 10,),
+                      Text("Services", style: TextStyle(fontSize: fontSize,),),
+                      SizedBox(height: 10,),
+                      Text("Flutter | Dart",style: TextStyle(fontSize: 11),),
+                      Text("Figma",style: TextStyle(fontSize: 11)),
+                      Text("Firebase",style: TextStyle(fontSize: 11)),
+                      Text("SQFLite",style: TextStyle(fontSize: 11)),
                     ],
                   ),
                 ),
@@ -29,23 +31,24 @@ class footer extends StatelessWidget {
                 child: SizedBox(
                   child: Column(
                     children: [
-                      Align(alignment:Alignment.centerLeft,child: Text("Contact Info", style: TextStyle(fontSize: fontSize,fontWeight: FontWeight.bold),)),
+                      Align(alignment:Alignment.centerLeft,child: Text("Contact Me", style: TextStyle(fontSize: fontSize),)),
+                      SizedBox(height: 10,),
                       Row(
                         children: [
-                          Icon(Icons.phone),
-                          Text("03325804476")
+                          Icon(Icons.phone,size: 15,),
+                          Text("03325804476",style: TextStyle(fontSize: 11))
                         ],
                       ),
                       Row(
                         children: [
-                          Icon(Icons.email),
-                          Text("soorajsuther919@gmail.com")
+                          Icon(Icons.email,size: 15),
+                          Text("soorajsuther919@gmail.com",style: TextStyle(fontSize: 11))
                         ],
                       ),
                       Row(
                         children: [
-                          Icon(Icons.place),
-                          Expanded(child: Text("Near Ali Palace, Qasimabad, Hyderabad"))
+                          Icon(Icons.place,size: 15),
+                          Expanded(child: Text("Near Ali Palace, Qasimabad, Hyderabad",style: TextStyle(fontSize: 11)))
                         ],
                       ),
                     ],
