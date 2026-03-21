@@ -212,7 +212,7 @@
 //                                         100,
 //                                       ),
 //                                       child: Image.asset(
-//                                         "assets/images/image.jpg",
+//                                         "assets/images/profile.jpg",
 //                                         height: 180,
 //                                         width: 180,
 //                                         fit: BoxFit.cover,
@@ -305,7 +305,7 @@
 //                                         100,
 //                                       ),
 //                                       child: Image.asset(
-//                                         "assets/images/image.jpg",
+//                                         "assets/images/profile.jpg",
 //                                         height: 180,
 //                                         width: 180,
 //                                         fit: BoxFit.cover,

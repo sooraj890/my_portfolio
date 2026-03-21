@@ -15,15 +15,15 @@ class experiances extends StatelessWidget {
     if (screenWidth < 600) {
       // Mobile
       containerWidth = screenWidth * 0.9;
-      containerHeight = screenHeight * 0.53;
+      containerHeight = screenHeight * 0.75;
     } else if (screenWidth < 1000) {
       // Tablet
       containerWidth = screenWidth * 0.50; // two items side by side
-      containerHeight = screenHeight * 0.68;
+      containerHeight = screenHeight * 0.90;
     } else {
       // Desktop
       containerWidth = screenWidth * 0.3; // smaller, many side by side
-      containerHeight = screenHeight * 0.70;
+      containerHeight = screenHeight * 0.90;
     }    return ScrollSlideUp(
       child: Container(
         width: containerWidth,
@@ -32,13 +32,14 @@ class experiances extends StatelessWidget {
             title: 'Experiance',
             child: Column(
               children: [
-                Align(alignment: Alignment.centerLeft, child: Text("🔹6+ months of hands-on experience in Flutter & Dart"),),
+                Align(alignment: Alignment.centerLeft, child: Text("🔹About one year+ experience in Flutter & Dart with firebase"),),
+                Align(alignment: Alignment.centerLeft, child: Text("🔹Version control system Git & Github"),),
                 Align(alignment: Alignment.centerLeft, child: Text("🔹Built responsive mobile and web applications using Flutter"),),
-                Align(alignment: Alignment.centerLeft, child: Text("🔹Implemented clean UI layouts with Material Design principles"),),
+                Align(alignment: Alignment.centerLeft, child: Text("🔹API integration and real-time data handling"),),
                 Align(alignment: Alignment.centerLeft, child: Text("🔹Created reusable widgets and custom components"),),
-                Align(alignment: Alignment.centerLeft, child: Text("🔹Integrated Firebase services (Hosting, basic auth, assets)"),),
-                Align(alignment: Alignment.centerLeft, child: Text("🔹Applied responsive design techniques using MediaQuery & LayoutBuilder"),),
-                Align(alignment: Alignment.centerLeft, child: Text("🔹Used Hero animations and smooth transitions for better UX"),)
+                Align(alignment: Alignment.centerLeft, child: Text("🔹Integrated Firebase services (Hosting, auth, assets)"),),
+                Align(alignment: Alignment.centerLeft, child: Text("🔹Database management (SQLite)"),),
+                Align(alignment: Alignment.centerLeft, child: Text("🔹UI/UX design with Figma"),)
               ],
             )
         ),

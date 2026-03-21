@@ -11,7 +11,7 @@ class ImagePreviewScreen extends StatelessWidget {
             tag: 'profile-image',
             child: InteractiveViewer(
               child: Image.asset(
-                "assets/images/image.jpg",
+                "assets/images/profile.jpg",
                 fit: BoxFit.contain,
               ),
             ),

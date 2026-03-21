@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:portfolio/files/my_projects.dart';
+import 'package:portfolio/files/my_projects/my_projects.dart';
 import 'package:portfolio/files/resume.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'files/about.dart';
@@ -107,7 +107,7 @@ class _homeState extends State<home> with SingleTickerProviderStateMixin {
                         child: Text(
                           "Sooraj_Flutter",
                           style: TextStyle(
-                            fontSize: MediaQuery.of(context).size.width * 0.040,
+                            fontSize: MediaQuery.of(context).size.width * 0.035,
                             fontWeight: FontWeight.bold,
                             color: Colors.blue,
                           ),
@@ -120,7 +120,7 @@ class _homeState extends State<home> with SingleTickerProviderStateMixin {
                         Align(
                           alignment: Alignment.topRight,
                           child: PopupMenuButton<MenuItem>(
-                            icon: const Icon(Icons.menu,color: Colors.blue,),
+                            icon: Icon(Icons.menu,color: Colors.blue,size: MediaQuery.of(context).size.width * 0.040,),
                             onSelected: (item) {
                               switch (item) {
                                 case MenuItem.about:
@@ -214,7 +214,7 @@ class _homeState extends State<home> with SingleTickerProviderStateMixin {
                                     elevation: 200,
                                     shadowColor: Colors.blue,
                                     child: Image.asset(
-                                      "assets/images/img.png",
+                                      "assets/images/profile.png",
                                       height: 200,
                                       width: 200,
                                     ),
@@ -267,7 +267,7 @@ class _homeState extends State<home> with SingleTickerProviderStateMixin {
                                     elevation: 200,
                                     shadowColor: Colors.blue,
                                     child: Image.asset(
-                                      "assets/images/img.png",
+                                      "assets/images/profile.png",
                                       height: 200,
                                       width: 200,
                                     ),
@@ -322,25 +322,30 @@ class _homeState extends State<home> with SingleTickerProviderStateMixin {
                             runSpacing: 16,
                             children: [
                               SizedBox(height: 30),
-                              Container(
-                                key: aboutKey,
-                                child: Column(
-                                  children: [
-                                    Padding(
-                                      padding: const EdgeInsets.only(left: 50,right: 50),
-                                      child: Align(
-                                        alignment: Alignment.topLeft,
-                                        child: Text(
-                                          "About Me",
-                                          style: TextStyle(
-                                            fontSize: 20,
-                                            color: Colors.purple,
+                              Center(
+                                child: Container(
+                                  height: 315,
+                                  width: 800,
+                                  key: aboutKey,
+                                  child: Column(
+                                    children: [
+                                      Padding(
+                                        padding: const EdgeInsets.only(left: 50,right: 50),
+                                        child: Align(
+                                          alignment: Alignment.topLeft,
+                                          child: Text(
+                                            "About Me",
+                                            style: TextStyle(
+                                              fontSize: 20,
+                                              color: Colors.blue,
+                                            ),
                                           ),
                                         ),
                                       ),
-                                    ),
-                                    about(),
-                                  ],
+                                      SizedBox(height: 40,),
+                                      about(),
+                                    ],
+                                  ),
                                 ),
                               ),
                               SizedBox(height: 30),
@@ -393,7 +398,7 @@ class _homeState extends State<home> with SingleTickerProviderStateMixin {
                           );
                         },
                     ),
-                    SizedBox(height: 50),
+                    SizedBox(height: 100),
                     footer(),
                   ],
                 ),

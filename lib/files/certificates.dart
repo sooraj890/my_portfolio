@@ -41,9 +41,15 @@ class certificate extends StatelessWidget {
                       children: [
                         listItem(
                           context,
-                          'UX Design Certificate',
-                          'assets/images/cert.png',
-                          'UX Design Certificate',
+                          'UX Design certificate',
+                          'assets/images/certificates/UXcert.png',
+                          'Successfully got UX Design certificate from coursera by course',
+                        ),
+                        listItem(
+                          context,
+                          'AI Certificate',
+                          'assets/images/certificates/AIcert.png',
+                          'Exited to shared my latest Artificial Intelligence certificate from coursera.',
                         ),
                       ],
                     ),

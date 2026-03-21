@@ -40,7 +40,7 @@ class contact extends StatelessWidget {
                 openLink(
                   'https://www.linkedin.com/in/sooraj-kumar-65722731a/',
                 );
-              }, icon: Image.asset('assets/images/new.png', height: 50,width: 50,)),
+              }, icon: Image.asset('assets/images/linkedin.png', height: 50,width: 50,)),
               IconButton(onPressed: (){
                 _openWhatsApp();
               }, icon: Image.asset('assets/images/wtsp.webp', height: 50,width: 50,)),

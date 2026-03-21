@@ -11,9 +11,7 @@ class skills extends StatelessWidget {
         title: 'My Skills',
         child: Column(
           children: [
-            Text(
-              "🔹Languages & Frameworks : Dart (Flutter),   kotlin \n🔹Mobile  Development:   Cross-platform apps, Responsive   UI,  Animations State management \n🔹Backend &  Storage:   Firebase, SQLite,   REST APIs \n🔹Tools:  Android Studio,  VS Code, Git/GitHub",style: TextStyle(fontSize: screenWidth < 700 ? 12 : 13),
-            ),
+            Align(alignment: Alignment.topLeft, child: Text("🔹 Dart & Flutter (Frontend)\n🔹 Firebase (Backend & APIs)\n🔹 SQLite (Database Management)\n🔹 Figma (UI/UX Design)\n🔹 Firebase (Authentication, Firestore)",style: TextStyle(fontSize: screenWidth<700?14:15),)),
             SizedBox(height: 40),
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
@@ -25,10 +23,13 @@ class skills extends StatelessWidget {
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(16),
                     ),
-                    child: Image.asset(
-                      "assets/images/flutter.jpg",
-                      height: 100,
-                      width: 80,
+                    child: Padding(
+                      padding: const EdgeInsets.all(15),
+                      child: Image.asset(
+                        "assets/images/skills/flutter.png",
+                        height: 80,
+                        width: 50,
+                      ),
                     ),
                   ),
                   SizedBox(width: 10),
@@ -38,10 +39,13 @@ class skills extends StatelessWidget {
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(16),
                     ),
-                    child: Image.asset(
-                      "assets/images/dart.webp",
-                      height: 100,
-                      width: 80,
+                    child: Padding(
+                      padding: const EdgeInsets.all(20),
+                      child: Image.asset(
+                        "assets/images/skills/dart.png",
+                        height: 80,
+                        width: 50,
+                      ),
                     ),
                   ),
                   SizedBox(width: 10),
@@ -51,10 +55,13 @@ class skills extends StatelessWidget {
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(16),
                     ),
-                    child: Image.asset(
-                      "assets/images/firebase.png",
-                      height: 100,
-                      width: 80,
+                    child: Padding(
+                      padding: const EdgeInsets.all(20),
+                      child: Image.asset(
+                        "assets/images/skills/firebase.png",
+                        height: 80,
+                        width: 50,
+                      ),
                     ),
                   ),
                   SizedBox(width: 10),
@@ -64,10 +71,29 @@ class skills extends StatelessWidget {
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(16),
                     ),
-                    child: Image.asset(
-                      "assets/images/sqflite.png",
-                      height: 100,
-                      width: 80,
+                    child: Padding(
+                      padding: const EdgeInsets.all(20),
+                      child: Image.asset(
+                        "assets/images/skills/sqlite.png",
+                        height: 80,
+                        width: 50,
+                      ),
+                    ),
+                  ),
+                  SizedBox(width: 10),
+                  Card(
+                    elevation: 10,
+                    shadowColor: Colors.blue,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(16),
+                    ),
+                    child: Padding(
+                      padding: const EdgeInsets.all(20),
+                      child: Image.asset(
+                        "assets/images/skills/figma.png",
+                        height: 80,
+                        width: 50,
+                      ),
                     ),
                   ),
                 ],

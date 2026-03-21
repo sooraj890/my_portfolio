@@ -14,7 +14,7 @@ class SectionCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(10.0),
+      padding: const EdgeInsets.only(top: 20,bottom: 20),
       child: ClipRRect(
         borderRadius: BorderRadius.circular(25),
         child: BackdropFilter(
@@ -28,7 +28,7 @@ class SectionCard extends StatelessWidget {
               ),
             ),
             child: Padding(
-              padding: const EdgeInsets.all(16),
+              padding: const EdgeInsets.only(top: 50, bottom: 50, left: 30, right: 30),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisSize: MainAxisSize.min,
@@ -38,11 +38,11 @@ class SectionCard extends StatelessWidget {
                     style: const TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.bold,
-                      color: Colors.purple, // better for glass
+                      color: Colors.blue, // better for glass
                     ),
                   ),
-                  const SizedBox(height: 20),
-                  child,
+                  const SizedBox(height: 50),
+                  Center(child: child),
                 ],
               ),
             ),
